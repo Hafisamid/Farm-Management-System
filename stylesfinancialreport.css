@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: margin-left 0.3s;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    padding: 50px;
+    max-width: calc(90% - 10px); /* Reduced width to account for margin */
+    margin: 10px auto; /* Centered with 10px margin */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px; /* Corrected border-radius from 0 px to 10px */
+    transition: margin-left 0.4s, max-width 0.4s;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    flex: 1 1 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333;
+    text-align: center;
+    height: 150px; /* Adjust height as needed */
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .description {
+    color: #777;
+    font-size: 14px;
+}
+
+.card-icon {
+    font-size: 50px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card.sale .card-icon {
+    background-color: #4CAF50;
+}
+
+.card.cost .card-icon {
+    background-color: #FF9800;
+}
+
+.card.due .card-icon {
+    background-color: #f44336;
+}
+
+.card.expense .card-icon {
+    background-color: #9C27B0;
+}
+
+.card.profit .card-icon {
+    background-color: #00BCD4;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-left: 80px; /* Adjust this based on icon size */
+}
+
+.card .card-content .value,
+.card .card-content .description {
+    margin: 5px 0;
+}
+
+/* Filter Form Styles */
+.filter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-form input[type="month"] {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Side Menu CSS */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+body.menu-open .container {
+    max-width: calc(90% - 260px); /* Adjusted width for when menu is open */
+    margin-left: 300px; /* Adjusted margin to align with open side menu */
+}
+
+.menu-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 24px;
+    color: #8B6A3D;
+    font-weight: bold;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 15px 20px;
+    color: #8B6A3D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list li a i {
+    margin-right: 10px;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+    background-color: #D4A373;
+    color: #fff;
+}

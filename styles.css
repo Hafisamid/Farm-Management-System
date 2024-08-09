@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: margin-left 0.3s;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    flex: 1 1 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333;
+    text-align: center;
+    height: 150px; /* Adjust height as needed */
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .description {
+    color: #777;
+    font-size: 14px;
+}
+
+.card-icon {
+    font-size: 50px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card.staff .card-icon {
+    background-color: #4CAF50;
+}
+
+.card.cows .card-icon {
+    background-color: #FF9800;
+}
+
+.card.milk-collected .card-icon {
+    background-color: #00BCD4;
+}
+
+.card.meat-collected .card-icon {
+    background-color: #8B4513;
+}
+
+.card.milk-sold .card-icon {
+    background-color: #FF5722;
+}
+
+.card.category .card-icon {
+    background-color: #9C27B0;
+}
+
+.card.expenses .card-icon {
+    background-color: #FF5722;
+}
+
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-left: 80px; /* Adjust this based on icon size */
+}
+
+.card .card-content .value,
+.card .card-content .description {
+    margin: 5px 0;
+}
+
+/* Side Menu CSS */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+body.menu-open .container {
+    margin-left: 250px;
+}
+
+.menu-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 24px;
+    color: #8B6A3D;
+    font-weight: bold;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 15px 20px;
+    color: #8B6A3D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list li a i {
+    margin-right: 10px;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+    background-color: #D4A373;
+    color: #fff;
+}
+
+/* Chart and Customer List CSS */
+.chart-and-customer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.chart-container, .customer-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    flex: 1 1 400px; /* Adjust width as needed */
+}
+
+.customer-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.customer-container th, .customer-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.customer-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.customer-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.customer-container tr:hover {
+    background-color: #ddd;
+}
+
+.customer-container td {
+    padding: 8px;
+}

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #5A2E2E; /* Black chocolate */
+    color: #fff;
+    border-bottom: 2px solid #4a148c;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 24px; /* Adjust the size as needed */
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #5A2E2E; /* Same as header color */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content span,
+.dropdown-content a {
+    color: #fff; /* White text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #4a148c; /* Darker purple for hover effect */
+}
+
+.show {
+    display: block;
+}

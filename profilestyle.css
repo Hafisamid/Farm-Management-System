@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: margin-left 0.3s;
+}
+
+.container {
+    padding: 50px;
+    max-width: calc(90% - 10px); /* Reduced width to account for margin */
+    margin: 10px auto; /* Centered with 10px margin */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px; /* Corrected border-radius from 0 px to 10px */
+    transition: margin-left 0.4s, max-width 0.4s;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Side Menu CSS */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #5A2E2E;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+body.menu-open .container {
+    max-width: calc(90% - 260px); /* Adjusted width for when menu is open */
+    margin-left: 300px; /* Adjusted margin to align with open side menu */
+}
+
+.menu-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 24px;
+    color: #8B6A3D;
+    font-weight: bold;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 15px 20px;
+    color: #8B6A3D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list li a i {
+    margin-right: 10px;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+    background-color: #D4A373;
+    color: #fff;
+}

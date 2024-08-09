@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: margin-left 0.3s;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 50px;
+    max-width: calc(90% - 10px); /* Reduced width to account for margin */
+    margin: 10px auto; /* Centered with 10px margin */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    transition: margin-left 0.4s, max-width 0.4s;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+select, input[type="number"], input[type="submit"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.sale-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sale-item label {
+    flex: 1;
+}
+
+.sale-item input[type="number"] {
+    margin-left: 10px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* Side Menu CSS */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f4f4f4;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+body.menu-open .container {
+    max-width: calc(90% - 260px); /* Adjusted width for when menu is open */
+    margin-left: 300px; /* Adjusted margin to align with open side menu */
+}
+
+.menu-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 24px;
+    color: #8B6A3D;
+    font-weight: bold;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 15px 20px;
+    color: #8B6A3D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list li a i {
+    margin-right: 10px;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+    background-color: #D4A373;
+    color: #fff;
+}
