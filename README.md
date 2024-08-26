@@ -10,7 +10,7 @@
 
 5. ![Screenshot 2024-08-09 083722](https://github.com/user-attachments/assets/4f108493-c3d0-4f46-964f-35e2b096811e)
 
-6. ![Screenshot 2024-08-09 083733](https://github.com/user-attachments/assets/52747457-aa54-4ad0-9d1f-6b6b2ac607b6)
+6. ![Screenshot 2024-08-26 235140](https://github.com/user-attachments/assets/77524ef7-b09e-431c-8e5e-ac332f4ba93d)
 
 7. ![Screenshot 2024-08-09 083742](https://github.com/user-attachments/assets/a84497a1-8c64-4244-bd2e-5c37b6807f67)
 
