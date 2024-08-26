@@ -26,7 +26,7 @@
 
 13. ![Screenshot 2024-08-09 083916](https://github.com/user-attachments/assets/6f7895c1-4cee-493c-8183-23605d29ebea)
 
-14. ![Screenshot 2024-08-09 083929](https://github.com/user-attachments/assets/c2350f3f-e3e4-4aaa-b440-df30f00a4e1e)
+14. ![Screenshot 2024-08-26 234926](https://github.com/user-attachments/assets/376d7595-547e-4de1-aa8e-c5390c9f75ae)
 
 15. ![Screenshot 2024-08-09 083944](https://github.com/user-attachments/assets/425443c5-15da-4b54-9049-3e5bd5ff8e8c)
 
